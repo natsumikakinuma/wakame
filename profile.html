@@ -1,0 +1,29 @@
+<!-- 縮毛矯正の部分 -->
+<label id="straighteningLabel">縮毛矯正:</label>
+<div class="inline">
+    <input type="radio" id="straighteningYes" name="straightening" value="yes" onclick="toggleDate('straighteningDate', true)" required>
+    <label for="straighteningYes" id="straighteningYesLabel">有</label>
+    <input type="radio" id="straighteningNo" name="straightening" value="no" onclick="toggleDate('straighteningDate', false)">
+    <label for="straighteningNo" id="straighteningNoLabel">無</label>
+</div>
+<input type="date" id="straighteningDate" name="straightening_date" style="display:none;">
+
+<!-- カラーの部分 -->
+<label id="colorLabel">カラー:</label>
+<div class="inline">
+    <input type="radio" id="colorYes" name="color" value="yes" onclick="toggleDate('colorDate', true)" required>
+    <label for="colorYes" id="colorYesLabel">有</label>
+    <input type="radio" id="colorNo" name="color" value="no" onclick="toggleDate('colorDate', false)">
+    <label for="colorNo" id="colorNoLabel">無</label>
+</div>
+<input type="date" id="colorDate" name="color_date" style="display:none;">
+
+<!-- 黒染めの部分 -->
+<label id="blackDyeLabel">黒染め:</label>
+<div class="inline">
+    <input type="radio" id="blackDyeYes" name="black_dye" value="yes" onclick="toggleDate('blackDyeDate', true)" required>
+    <label for="blackDyeYes" id="blackDyeYesLabel">有</label>
+    <input type="radio" id="blackDyeNo" name="black_dye" value="no" onclick="toggleDate('blackDyeDate', false)">
+    <label for="blackDyeNo" id="blackDyeNoLabel">無</label>
+</div>
+<input type="date" id="blackDyeDate" name="black_dye_date" style="display:none;">

@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    background-color: #f6ebeb;
+    color: white;
+    padding: 3px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin-bottom: 5px;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    border-radius: 8px;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+.language-switch {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.language-switch button {
+    background-color: #FE8DA6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.language-switch button:hover {
+    background-color: #FE8DA6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+    width: 100%;
+    text-align: left;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input:focus,
+select:focus {
+    border-color: #FE8DA6;
+    outline: none;
+}
+
+button {
+    background-color: #FE8DA6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #FE8DA6;
+}
+
+.profile-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-link a {
+    color: #FE8DA6;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.profile-link a:hover {
+    text-decoration: underline;
+}
+
+.center-text {
+    text-align: center;
+    width: 100%;
+}
+
+/* 横並びのスタイルを追加 */
+.inline {
+    display: flex;
+    align-items: center;
+}
+
+.inline label {
+    margin-right: 10px;
+    margin-bottom: 0;
+}

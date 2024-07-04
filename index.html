@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログインと登録</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>WAKAME</h1>
+    </div>
+    <div class="container">
+        <div class="language-switch">
+            <button onclick="setLanguage('ja')">日本語</button>
+            <button onclick="setLanguage('en')">English</button>
+        </div>
+        <h2 id="loginTitle" class="center-text">ログイン</h2> <!-- ここにclass追加 -->
+        <form id="loginForm" action="login.php" method="post">
+            <label for="loginEmail" id="loginEmailLabel">メールアドレス:</label>
+            <input type="email" id="loginEmail" name="email" required>
+            <label for="loginPassword" id="loginPasswordLabel">パスワード:</label>
+            <input type="password" id="loginPassword" name="password" required>
+            <button type="submit" id="loginButton">ログイン</button>
+        </form>
+
+        <h2 id="registerTitle" class="center-text">登録</h2> <!-- ここにclass追加 -->
+        <form id="registerForm" action="register.php" method="post">
+            <label for="registerEmail" id="registerEmailLabel">メールアドレス:</label>
+            <input type="email" id="registerEmail" name="email" required>
+            <label for="registerPassword" id="registerPasswordLabel">パスワード:</label>
+            <input type="password" id="registerPassword" name="password" required>
+            <button type="submit" id="registerButton">登録</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
